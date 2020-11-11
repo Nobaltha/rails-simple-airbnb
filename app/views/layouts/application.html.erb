@@ -10,6 +10,20 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <%= link_to "Simple Airbnb", flats_path, class: "navbar-brand" %>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="ml-auto flex">
+          <%# <nav class="navbar navbar-light bg-light">
+            <form class="form-inline">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </nav>           %>
+          <%= link_to "Add flat", new_flat_path, class: "btn btn-outline-primary" %>
+        </div>
+      </div>
+    </nav>
     <%= yield %>
   </body>
 </html>
